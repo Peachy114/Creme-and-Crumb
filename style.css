@@ -1,10 +1,10 @@
 body {
-    background-color: #ffffff;
+    background-color: white;
 }
 
-/* button, img, h1, #product{
+button, img, h1, #product{
     user-select: none;
-} */
+}
 
 #HeroSection {
     background-image: url("./assests/background.jpg");
@@ -60,4 +60,15 @@ h1,h2, li, .font-custom{
   }
 }
 
+.bounce {
+  animation: bounce 3s ease-in-out infinite;
+}
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
