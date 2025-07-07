@@ -1,0 +1,63 @@
+body {
+    background-color: #ffffff;
+}
+
+/* button, img, h1, #product{
+    user-select: none;
+} */
+
+#HeroSection {
+    background-image: url("./assests/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1,h2, li, .font-custom{
+    font-family: "Playfair Display", serif;
+}
+
+#owner {
+    width: 300px;
+    height: 460px;
+    object-fit: cover;
+    object-position: center;
+    transform: rotate(-5deg);
+    margin-top:50px;
+    color:#d42310 
+}
+
+#customize-hero {
+    background-image: url(./assests/customize.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#gallery-one {
+  animation: scroll-left 30s linear infinite;
+}
+
+#gallery-two {
+  animation: scroll-right 30  s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
+}
+
+ @keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(500px); /* Large enough shift to see effect */
+  }
+}
+
+

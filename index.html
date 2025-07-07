@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Crème & Crumb</title>
+</head>
+<body id='root' class="text-gray-800">
+    
+    <!-- NAVBAR -->
+    <nav id="navbar" class="w-full fixed z-50 bg-[#1e1e1e] rounded-b-2xl overflow-hidden">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-2 sm:px-10 text-white">
+            <h2 class="text-2xl font-bold">Crème & Crumb</h2> 
+            <ul class="flex space-x-4 items-center">
+            <li class="cursor-pointer hover:text-[#E14434] hover:scale-105 transition duration-200">About us</li>
+            <li class="cursor-pointer hover:text-[#E14434] hover:scale-105 transition duration-200">Shop now</li>
+            <li>
+            <button class="bg-[#E14434] px-5 py-2 hover:bg-white hover:text-black hover:scale-105 transition duration-200 cursor-pointer">Sign in</button>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <div id="HeroSection" class="relative w-full h-screen mx-auto pt-20 mb-10 rounded-2xl overflow-hidden">
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
+        <div class="relative z-10 flex flex-col items-start justify-center h-full text-white text-left pl-30 gap-3">
+            <h1 class="font-bold text-4xl mb-4 sm:text-center">
+                Baked with Love, Topped with Joy
+            </h1>
+            <p class="max-w-xl leading-relaxed">
+                 Every cake we make is a little love letter—layered with care, frosted with happiness, and finished to perfection. 
+                 Whether you're celebrating a big day or just craving something sweet, we’re here to make every moment a little more delicious.
+            </p>
+            <div class="space-x-4">
+                <button class="bg-[#E14434] px-5 py-2 hover:bg-white hover:text-black hover:cursor-pointer hover:scale-105 transition-all duration-200">
+                    Shop Now
+                </button>
+                
+                <button class="bg-[#E14434] px-5 py-2 hover:bg-white hover:text-black hover:cursor-pointer hover:scale-105 transition-all duration-200">
+                    See Our Cakes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Cakes Featured-->   
+    <div class="w-full mx-auto py-10 px-10 mt-30 mb-30">
+        <h1 class="text-4xl font-bold mb-4 hover:text-[#E14434] text-center">Crème & Crumb</h1>
+        <h1 class="text-4xl text-center">Our Exclusives Desserts</h1>
+        <h1 class="font-bold text-[#E14434] text-center text-2xl mb-10">Best Sellers</h1>
+        <div id="cards" class=" flex justify-evenly items-center cards flex-wrap"></div>  
+    </div>
+
+
+    <!-- EXPLORE MORE -->
+    <section id="product" class="w-full bg-[#1e1e1e] text-white py-10 mt-10 mb-30">
+        <div class="max-w-275 mx-auto h-full">
+            <h1 class="text-2xl font-bold">Explore more</h1>
+
+            <div class="flex space-x-4 mt-5 font-bold font-custom">
+            <button class="filter-btn w-20 text-start hover:text-[#E14434] hover:scale-105 transition duration-200" data-filter="cupcake">Cupcakes</button>
+            <button class="filter-btn w-25 text-start hover:text-[#E14434] hover:scale-105 transition duration-200" data-filter="whole">Whole Cakes</button>
+            <button class="filter-btn w-20 text-start hover:text-[#E14434] hover:scale-105 transition duration-200" data-filter="pastry">Pastries</button>
+            </div>
+        </div>
+        <div id="product-grid" class="px-30 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4"></div>
+    </section>
+
+    <!-- ABOUT OR WELCOME PAGE -->
+    <div id="About-us" class="w-full py-5 my-20 relative">
+        <div class="max-w-4xl mx-auto flex flex-col justify-center px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4 hover:text-[#E14434]">Crème & Crumb</h1>
+            <p class="text-lg text-gray-700 px-10">
+                Hello! I’m <span class="font-bold">Elena Cruz, the proud founder of Crème & Crumb </span>— a little 
+                dream that rose like a perfect sponge cake from my grandmother’s 
+                kitchen in a small coastal town.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- CUSTOMIZE SECTION -->
+    <section id="customize-hero" class="relative overflow-hidden h-[800px] mt-10 mb-30">
+    <div class="absolute inset-0 bg-black/70 z-0"></div>
+    <div class="relative z-10 h-full flex items-center justify-center">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 text-white px-4">
+            <div class="flex-1 flex flex-col">
+                <h1 class="text-2xl font-bold mb-2">Customize Your Dream Cake</h1>
+                <p>Select your favorite flavors, sizes, and decorations — we’ll make it magical just for you.</p>
+            </div>
+            <div class="flex-1 flex flex-col justify-center">
+                <p>Every celebration deserves a cake that's as unique as the moment itself. 
+                    Whether you're dreaming of rich chocolate layers, pastel buttercream swirls, 
+                    or a playful theme that brings your vision to life — we’re here to bake it 
+                    just the way you imagine. Personalize every detail from flavor to finish and
+                    let us craft something unforgettable for your special day.
+                </p>
+                <p class="mt-5"><em>🧁 Ready to bring your dream cake to life?</em></p>
+                <a href="./customize.html"
+                class="bg-[#E14434] px-5 py-2 mt-10 text-center text-white hover:bg-white 
+                hover:text-black hover:scale-105 transition duration-200 cursor-pointer w-fit">
+                Customize
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="w-full py-5 relative">
+        <div class="max-w-275 mx-auto flex flex-col justify-center items-center">
+            <h2 class="font-bold py-5">TESTIMONIALS</h2>
+            <h1 class="font-bold text-4xl">What Our Customers Say</h1>
+            <p class="text-center py-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                quos culpa alias quidem exercitationem suscipit eligendi aliquam
+                nihil provident, veniam expedita qui ipsa ex incidunt distinctio 
+                harum obcaecati eveniet sunt.
+            </p>
+        </div>
+    </section>
+
+    <section class="flex justify-between px-10">
+        <div id='testimonials' class="justify-between">
+                <div class="relative text-white text-center w-100">
+                    <div class="rounded-2xl mt-10 bg-[#1e1e1e] py-5 px-5">
+                        <img 
+                        class="rounded-full absolute translate-x-33 -translate-y-15 w-25 h-25"
+                        src="https://randomuser.me/api/portraits/women/65.jpg" 
+                        alt="">
+                        <p class="max-w-100 mt-15">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dignissimos cumque ullam amet minima facilis non est quod praesentium
+                        </p>
+                        <h2 class="text-bold mt-10 text-2xl">Sophia Reyes</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id='testimonials' class="justify-between">
+                <div class="relative text-white text-center w-100">
+                    <div class="rounded-2xl mt-10 bg-[#1e1e1e] py-5 px-5">
+                        <img 
+                        class="rounded-full absolute translate-x-33 -translate-y-15 w-25 h-25"
+                        src="https://randomuser.me/api/portraits/men/44.jpg" 
+                        alt="">
+                        <p class="max-w-100 mt-15">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dignissimos cumque ullam amet minima facilis non est quod praesentium
+                        </p>
+                        <h2 class="text-bold mt-10 text-2xl">Liam Tan</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id='testimonials' class="justify-between">
+                <div class="relative text-white text-center w-100">
+                    <div class="rounded-2xl mt-10 bg-[#1e1e1e] py-5 px-5">
+                        <img 
+                        class="rounded-full absolute translate-x-33 -translate-y-15 w-25 h-25"
+                        src="https://randomuser.me/api/portraits/women/32.jpg" 
+                        alt="">
+                        <p class="max-w-100 mt-15">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dignissimos cumque ullam amet minima facilis non est quod praesentium
+                        </p>
+                        <h2 class="text-bold mt-10 text-2xl">Ava Castillo</h2>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- GALLERY -->
+     <div class="relative h-[400px] overflow-hidden mt-30">
+        <section id='gallery-one' class="flex absolute">
+            <img src="./assests/Cake1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/cup5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/cup5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry2.jpg" alt="" class="w-50 h-50 object-cover">
+        </section>
+        <section id='gallery-two' class="flex flex-end absolute translate-y-50 -translate-x-750">
+            <img src="./assests/cards/pastry2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/cup5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/cup5.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry4.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/pastry1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/cards/wholecake1.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake3.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake2.jpg" alt="" class="w-50 h-50 object-cover">
+            <img src="./assests/Cake1.jpg" alt="" class="w-50 h-50 object-cover">
+        </section>
+     </div>
+
+
+
+   
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

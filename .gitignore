@@ -1,0 +1,31 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore npm dependencies (if you're using Node.js)
+node_modules/
+
+# Ignore environment files (if any)
+.env
+.env.local
+
+# Ignore build output (if using a build tool like Vite/Webpack/etc.)
+dist/
+build/
+
+# Cache or temp files
+*.cache
+*.tmp
+
+# Optional: Ignore image/video backups or design files
+*.psd
+*.ai
+*.sketch
+
+# Optional: Ignore OS-specific files
+.idea/
+.vscode/
+*.swp
