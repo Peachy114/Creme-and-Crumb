@@ -19,20 +19,22 @@ const cards = Array.from({length: 3},(_,i) => ({
 //divs in html
 cards.forEach(card => {
   const cardDiv = document.createElement('div');
-  cardDiv.className = `flex flex-col justify-center w-[350px] h-[500px] bg-[#3A0519] text-white shadow-md mt-20 lg:mt-5`;
+  cardDiv.className = `flex flex-col w-[350px] h-[500px] bg-[#3A0519] shadow-md mt-20 lg:mt-5 rounded-3xl overflow-hidden`;
 
   cardDiv.innerHTML = `
     <img 
-      class="mb-2 w-full h-[200px] object-cover rounded-bl-3xl" 
+      class="mb-2 w-full h-[260px] object-cover" 
       src="${card.image}" 
       alt="${card.alt}"
     >
-    <div class='flex'>
-      <h1 class="font-semibold text-lg py-5 px-5">${card.heading}</h1>
-      <span class="text-end py-5 px-5">${card.ratings}</span>
+    <div class='flex flex-col justify-center text-white'>
+      <div class='flex'>
+        <h1 class="font-semibold text-lg py-5 px-5">${card.heading}</h1>
+        <span class="text-end py-5 px-5">${card.ratings}</span>
+      </div>
+      <p class="px-5">${card.paragraph}</p>
+      <button class="py-2 px-10 bg-white text-black mx-auto mt-5 hover:bg-white hover:text-black hover:scale-105 transition duration-200 cursor-pointer"> Order </button>
     </div>
-    <p class="px-5">${card.paragraph}</p>
-    <button class="py-2 px-10 bg-white text-black mx-auto mt-5 hover:bg-white hover:text-black hover:scale-105 transition duration-200 cursor-pointer"> Order </button>
   `
   container.appendChild(cardDiv);
 });
@@ -122,8 +124,6 @@ window.addEventListener("DOMContentLoaded", () => {
       updateFilter(selected);
     });
   });
-
-
 });
 
 //I did select all filter buttons and products class in html file
