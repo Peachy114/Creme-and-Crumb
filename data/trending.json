@@ -1,0 +1,26 @@
+[
+  {
+    "image": "images/trending/bread.jpg",
+    "title": "Garlic Bread",
+    "price": 5,
+    "star": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/trending/cookies.jpg",
+    "title": "Garlic Bread",
+    "price": 5,
+    "star": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/trending/cupcake.jpg",
+    "title": "Garlic Bread",
+    "price": 5,
+    "star": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/trending/breadPie.jpg",
+    "title": "Garlic Bread",
+    "price": 5,
+    "star": "⭐⭐⭐⭐⭐"
+  }
+]
