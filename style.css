@@ -1,0 +1,69 @@
+:root {
+    --Creme-pink:#D6A99D;
+    --Creme-baige:#fbf3d5;
+    --Creme-aesthethic:#D6DAC8;
+    --Creme-aesthethicblue:#9CAFAA;
+    --Creme-font-family: "Nunito", sans-serif;
+}
+
+span, h1, h2, h3, li, button {
+    font-family: var(--Creme-font-family);
+}
+
+.hero-bg {
+    background-image: url("./images/hero-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bread-img {
+    background-image: url("./images/bread.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bread-imgOne {
+    background-image: url("./images/bread1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donut-img {
+    background-image: url("./images/donut.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ads-img {
+    background-image: url("./images/ads.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* News */
+
+.article-one {
+    background-image: url("./images/news/article-one.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article-two {
+    background-image: url("./images/news/article-two.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article-three {
+    background-image: url("./images/news/article-three.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
