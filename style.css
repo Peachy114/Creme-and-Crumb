@@ -67,3 +67,15 @@ span, h1, h2, h3, li, button {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#subscribe {
+    background-image: url("./images/subscribe.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#items-footer li {
+    color:gray;
+    padding: 4px 0px;
+}

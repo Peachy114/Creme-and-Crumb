@@ -7,6 +7,7 @@ async function loadComponent(id, file) {
 
 loadComponent('header','header.html');
 loadComponent('main','main.html');
+loadComponent('footer','footer.html');
 
 //inside main.html
 loadComponent('hero-section','main-components/hero-section.html');
@@ -16,3 +17,4 @@ loadComponent('trending','main-components/trending.html');
 loadComponent('service','main-components/services.html');
 loadComponent('testemonials','main-components/testemonials.html');
 loadComponent('news','main-components/news.html');
+loadComponent('subscribe','main-components/subscribe.html');
