@@ -3,10 +3,10 @@ fetch('data/trending.json')
   .then(data => {
     const container = document.getElementById('trends');
     const ul = document.createElement('ul');
-    ul.className = "grid grid-cols-4 gap-5";
+    ul.className = "grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-5 px-5 lg:px-0";
     data.forEach(food => {
       ul.innerHTML += `
-        <li class="h-100 flex flex-col">
+        <li class="flex flex-col mb-8">
           <img src="${food.image}" alt="${food.title}">
           <p class="mt-5">${food.title}</p>
           <span>$${food.price}</span>

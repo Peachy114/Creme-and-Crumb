@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <header>
-    <div class="bg-[var(--Creme-pink)]">
+    <div class="bg-[var(--Creme-pink)] hidden lg:block">
         <div class="flex justify-between max-w-6xl mx-auto py-2 text-white">
             <h3><strong>Free</strong> Shipping from all item</h3>
             <ul class="flex space-x-3 items-center cursor-default">
@@ -18,13 +18,13 @@
 
     <div class="bg-white">
         <div class="max-w-6xl mx-auto py-4">
-            <div class="flex justify-between">
-                <span class="text-3xl font-bold text-[var(--Creme-pink)]"
+            <div class="flex justify-between px-5 lg:px-0">
+                <span class="text-xl lg:text-3xl font-bold text-[var(--Creme-pink)]"
                 >Creme and Crumb
                 </span>
 
-                <ul class="flex space-x-3 items-center cursor-default
-                text-[var(--Creme-aesthethicblue)]">
+                <ul class="space-x-3 items-center cursor-default
+                text-[var(--Creme-aesthethicblue)] hidden lg:flex ">
                     <li>HOME</li>
                     <li>SHOP</li>
                     <li>FEATURED</li>
@@ -32,9 +32,14 @@
                     <li>CART</li>
                 </ul>
 
-                <button class="border border-[var(--Creme-pink)] px-10 rounded-2xl">
+                <button class="hidden lg:block border border-[var(--Creme-pink)] px-10 rounded-2xl">
                     <span class="text-[var(--Creme-pink)]">Register</span>
                 </button>
+
+                <button class="block lg:hidden">
+                    <img src="images/icons/hamburger.png" alt="hamburger">
+                </button>
+            
             </div>
         </div>
     </div>
