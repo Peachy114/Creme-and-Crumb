@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<div class="max-w-6xl mx-auto pt-30">
-    <ul class="grid grid-cols-3 gap-10 px-5 lg:px-0">
+<div class="max-w-7xl mx-auto pt-30">
+    <ul class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 px-5">
 
         <li class="bg-[var(--Creme-baige)] h-55 overflow-hidden 
         relative p-5 flex items-center flex-wrap">
-            <div class="w-28">
+            <div class="w-28 text-center lg:text-start">
                 <p class="mb-2 text-gray-500">Food Taste</p>
                 <h1 class="font-semibold">Fresh bread bakery shop</h1>
                 <button class="mt-5 text-xs text-[var(--Creme-pink)]">SHOP NOW ></button>
             </div>
             <!-- image -->
-            <div class="bread-img absolute z-10 hero-bg w-55 h-60 rounded-l-full
+            <div class="hidden lg:block bread-img absolute z-10 hero-bg w-55 h-60 rounded-l-full
             translate-x-30"></div>
         </li>
 
@@ -28,7 +28,7 @@
                 <button class="mt-5 text-xs text-[var(--Creme-pink)]">SHOP NOW ></button>
             </div>
             <!-- image -->
-            <div class="bread-imgOne absolute z-10 hero-bg w-55 h-60 rounded-l-full
+            <div class="hidden lg:block bread-imgOne absolute z-10 hero-bg w-55 h-60 rounded-l-full
             translate-x-30"></div>
         </li>
 
@@ -42,9 +42,11 @@
                 <button class="mt-5 text-xs text-[var(--Creme-pink)]">SHOP NOW ></button>
             </div>
             <!-- image -->
-            <div class="donut-img absolute z-10 hero-bg w-55 h-60 rounded-l-full
+            <div class="hidden lg:block donut-img absolute z-10 hero-bg w-55 h-60 rounded-l-full
             translate-x-30"></div>
         </li>
+
+        <div class="block lg:hidden bread-img hero-bg"></div>
 
 
     </ul>
