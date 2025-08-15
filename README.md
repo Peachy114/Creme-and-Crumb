@@ -1,37 +1,36 @@
-Static Homepage
+<h1 align="center">🌐 Creme and Crumb Static Designs</h1>
 
-A simple static homepage built with HTML, CSS, and JavaScript.
-This project demonstrates basic front-end design and interactivity without any backend or database.
+<p align="center">
+  A clean, responsive homepage built with <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.
+  <br>
+  Fully static — no backend or database.
+</p>
 
-Features
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge" alt="HTML Badge">
+  <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge" alt="CSS Badge">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge" alt="JavaScript Badge">
+</p>
 
-Responsive layout for desktop and mobile
+---
 
-Styled with modern CSS
+## ✨ Features
+- 📱 **Responsive Design** – Works on mobile, tablet, and desktop
+- 🎨 **Modern Styling** – Clean and minimal
+- ⚡ **Lightweight** – Fast load times
+- 🖱 **Interactive Elements** – Smooth JavaScript-powered UI
 
-JavaScript for interactive elements and animations
+---
 
-Fully static — no server-side rendering or database
+## 🛠 Technologies
+- **HTML5** – Structure  
+- **CSS3** – Styling & responsiveness  
+- **JavaScript (ES6)** – Interactivity  
 
-Technologies Used
+---
 
-HTML5 – Structure
-
-CSS3 – Styling & responsiveness
-
-JavaScript (ES6) – Interactivity
-
-How to Run
-
-Clone or download the repository
-
-Open index.html in any modern web browser
-git clone https://github.com/yourusername/static-homepage.git
-cd static-homepage
-
-Then double-click index.html or open it with your browser.
-
-Project Status
-
-✅ Completed – Static version only
-💡 Future update idea: Convert into a dynamic site using a backend and database
+## 🚀 Getting Started
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/Peachy114/Creme-and-Crumb-StaticDesignOnly.git
+   cd Creme-and-Crumb-StaticDesignOnly
